@@ -4,10 +4,10 @@ public class ThreadRunner implements Runnable {
 
     private static final long TIME_INTERVAL = 60000;
 
-    public static void ThreadRunner() throws Exception{
-        JsonURLParser parser = new JsonURLParser("steamUrl.json");
+   public static void ThreadRunner() throws Exception{
+        JsonDataParser parser = new JsonDataParser("steamUrl.json");
         CSVModelDataWriter.writeDataFromURLToCSV(
-                JsonModelDataParser.getDataByKey(
+                JsonDataParser.getDataByKey(
                         URLDataWriter.getDataFromURL(
                                 parser.getStringObject("url"))), "steamData.csv");
     }
@@ -17,7 +17,7 @@ public class ThreadRunner implements Runnable {
         Runnable runnable = () -> {
             while (true) {
                 try {
-                    ThreadRunner.ThreadRunner();
+                    //ThreadRunner.ThreadRunner();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

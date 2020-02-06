@@ -3,10 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) throws Exception{
-	// write your code here
+
         String url;
-        JsonURLParser jsonURLParser = new JsonURLParser("steamUrl.json");
-        url = jsonURLParser.getStringObject("url");
+        JsonDataParser jsonDataParser = new JsonDataParser("steamUrl.json");
+        url = jsonDataParser.getStringObject("url");
         System.out.println(url);
 
         URLDataWriter urlDataWriter = new URLDataWriter();
@@ -14,8 +14,7 @@ public class Main {
         System.out.println(data);
 
         MarketItem item;
-        JsonModelDataParser jsonModelDataParser = new JsonModelDataParser();
-        item = jsonModelDataParser.getDataByKey(data);
+        item = jsonDataParser.getDataByKey(data);
         System.out.println(item.toString());
 
         CSVModelDataWriter csvModelDataWriter = new CSVModelDataWriter();

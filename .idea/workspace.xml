@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55979f7e-96bb-4bab-9739-df29448ea088" name="Default Changelist" comment="" />
+    <list default="true" id="55979f7e-96bb-4bab-9739-df29448ea088" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SteamMarketManager/com/company/CSVModelDataWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SteamMarketManager/com/company/CSVModelDataWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SteamMarketManager/com/company/JsonFileParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SteamMarketManager/com/company/JsonModelDataParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SteamMarketManager/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SteamMarketManager/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SteamMarketManager/com/company/MarketItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SteamMarketManager/com/company/MarketItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SteamMarketManager/com/company/ThreadRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SteamMarketManager/com/company/ThreadRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SteamMarketManager/com/company/URLDataWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SteamMarketManager/com/company/URLDataWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/CSVModelDataWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CSVModelDataWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/JsonModelDataParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/JsonDataParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/JsonURLParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/MarketItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MarketItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ThreadRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ThreadRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/URLDataWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/URLDataWriter.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +44,7 @@
   <component name="ProjectId" id="1XQl4Kk94NodRHckhQ5COQlnDLw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SteamMarketManager-dev" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />

@@ -1,17 +1,17 @@
 package com.company;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.net.URL;
-import java.nio.charset.StandardCharsets;
-import java.util.Scanner;
+import java.net.URLConnection;
 
 public class URLDataWriter {
-    static String getDataFromURL(String url) {
-        String data = new String();
-        try (Scanner scanner = new Scanner(new URL((url)).openStream(), StandardCharsets.UTF_8.toString())) {
-            data = (scanner.hasNext() ? scanner.next() : " ");
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+    static String getDataFromURL(String url) throws Exception{
+        String data;
+        URLConnection urlConnection = new URL(url).openConnection();
+        BufferedReader in = new BufferedReader(
+                new InputStreamReader(urlConnection.getInputStream()));
+        data=in.readLine();
         return data;
     }
 }
