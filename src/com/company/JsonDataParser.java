@@ -28,7 +28,11 @@ public class JsonDataParser {
         JSONObject jParser = (JSONObject) object;
         Double lowest_price;
         Double median_price;
-        String currency = "\u20ac";
+
+        String currency = (String) jParser.get("lowest_price");
+        String[] arrOfStr = currency.split("");
+        currency = (arrOfStr[currency.length()-1]);
+
         try {
             lowest_price = (new DecimalFormat("##,###.###"+currency)).parse((String) jParser.get("lowest_price")).doubleValue();
         }
