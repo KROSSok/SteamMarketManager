@@ -26,14 +26,32 @@ public class JsonDataParser {
         JSONParser jsonParser = new JSONParser();
         Object object = jsonParser.parse(data);
         JSONObject jParser = (JSONObject) object;
+        Double lowest_price;
+        Double median_price;
+        String currency = "\u20ac";
+        try {
+            lowest_price = (new DecimalFormat("##,###.###"+currency)).parse((String) jParser.get("lowest_price")).doubleValue();
+        }
+        catch(Exception e) {
+            String split[] = ((String) jParser.get("lowest_price")).split(",");
+            lowest_price = Double.parseDouble(split[0]);
+        }
+
+        try {
+            median_price = ((new DecimalFormat("##,###.###"+currency)).parse((String) jParser.get("median_price"))).doubleValue();
+        }
+        catch(Exception e) {
+            String split[] = ((String) jParser.get("median_price")).split(",");
+            median_price = Double.parseDouble(split[0]);
+        }
 
         MarketItem item = new MarketItem(
                     (Boolean) jParser.get("success"),
-                    (new DecimalFormat("##,###.###\u20ac")).parse((String) jParser.get("lowest_price")).doubleValue(),
+                    lowest_price,
                     Integer.parseInt((String) jParser.get("volume")),
-                    ((new DecimalFormat("##,###.###'--'\u20ac")).parse((String) jParser.get("median_price"))).doubleValue()
+                    median_price,
+                    currency
             );
         return item;
     }
 }
-// ((new DecimalFormat("##,###.###\u20ac")).parse((String) jParser.get("lowest_price"))).doubleValue()
